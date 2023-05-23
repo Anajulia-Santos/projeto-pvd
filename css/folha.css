@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+body{
+    background-color: #CCF8EF;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section{
+    border: 2px solid #265E53;
+    min-width: 45%;
+    height: 600px;
+    overflow: auto;
+    margin: 4px;
+    padding: 4px;
+    box-shadow: 1px 1px 6px 1px #265E53;
+    color: #265E53;
+}
+main section h1{
+    font-family: 'Trebuchet MS';
+    width: 90%;
+    text-align: center;
+}
+fieldset{
+    margin: 5px;
+    padding: 8px;
+    border: 3px double #265E53;
+}
+fieldset legend{
+    text-transform: uppercase;
+    padding-left: 25px;
+}
+fieldset{
+    margin: 6px;
+    padding: 6px;
+}
+fieldset input{
+    height: 45px;
+    width: 70%;
+    font-size: 30px;
+    border: 2px solid #265E53;
+    border-radius: 5px;
+}
+fieldset input[type="submit"]{
+    width: 25%;
+    background-color: #265E53;
+    color: #CCF8EF ;
+    border: 1px solid #265E53;
+    border-radius: 5px;
+}
+.details{
+    width: 100%;
+    border: 1px solid #265E53;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.details h2{
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+    width: calc(100%-16px);
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+}
+.details figure{
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+.details figure img{
+    max-width: 90%;
+}
+.details figure figcaption{
+    font-size: 15px;
+    font-style: italic;
+}
+button{
+    display: block;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    background-color: #265E53;
+    color: #CCF8EF ;    
+    font-size: 25px;
+    border: 1px solid #265E53;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px #425E59;
+    margin: 5px auto;
+}
+.result{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 4px;
+    border: 1px solid #265E53;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    font-family: 'tahoma';
+    font-size: 16px;
+    text-transform: uppercase ;
+}
+.lists{
+    flex-grow: 2;
+    word-break: break-all;
+    text-align: center;
+}
+.lists:nth-child(2){
+    flex-grow: 3;
+    max-width: 40%;
+}
+.lists:nth-child(3){
+    flex-grow: 1;
+    min-width: 90px;
+}
+.subtotal{
+    width: 250px;
+    height: 60px;
+    background-color: rgba(130, 198, 184, 0.8);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: -5px;
+    right: -25px;
+    border: 2px solid #265E53;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+body#index{
+    background-color: #CCF8EF;
+   
+}
+header#index{
+    background-color: #265E53;
+    height: 40px;
+}
+main#index{
+    height: 590px;
+    min-height: 300px;
+    
+}
+.caixa#login{
+    width: 500px;
+    height: 350px;
+    color: #f7f9f8;
+    font-family: 'Trebuchet MS';
+    background: #265E53;
+    padding: 2px;
+    margin-top: 10%;
+    border: 8px double #CCF8EF;
+}
+#login h2{
+    text-align: center;
+    font-size: 50px;
+}
+#login input{
+    padding: 5px;
+    height: 45px;
+    width: 70%;
+    font-size: 20px;
+    border: 2px solid #265E53;
+    border-radius: 5px;
+}
+#login input[type=text]{
+    width: 95%;
+}
+#login #passsenha{
+    width: 95%;
+}
+.botao{
+    background: #265E53;
+    display: block;
+    width: 60%;
+    height: 50px;
+    margin: 20px auto;
+    padding: 5px;
+    color: #CCF8EF ;    
+    font-size: 25px;
+    border: 1px solid #265E53;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px #CCF8EF;
+}
+footer#index{
+    background-color: #265E53;
+    height: 40px;
+}
+#cxlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'Trebuchet MS';
+    margin-left: 30px;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CCF8EF;
+}
+/*-------------------------------------------------------------------------------------------*/
+body#cadst{
+    background-color: #CCF8EF;
+   
+}
+header#cadst{
+    background-color: #265E53;
+    height: 40px;
+}
+main#cadst{
+    height: 590px;
+    min-height: 300px;
+}
+.cadst#cad{
+    width: 500px;
+    height: 350px;
+    color: #f7f9f8;
+    font-family: 'Trebuchet MS';
+    background: #265E53;
+    padding: 2px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 8px double #CCF8EF;
+}
+#cad h2{
+    text-align: center;
+    font-size: 50px;
+}
+#cad input{
+    padding: 5px;
+    height: 45px;
+    width: 65%;
+    font-size: 20px;
+    border: 2px solid #265E53;
+    border-radius: 5px;
+}
+#cad label{
+    width: 90%;
+    font-size: 22px;
+    text-align: center;
+}
+.button{
+    background: #265E53;
+    display: block;
+    width: 60px;
+    height: 30px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #CCF8EF ;    
+    font-size: 25px;
+    border: 1px solid #265E53;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px #CCF8EF;
+}
+footer#cad{
+    background-color: #265E53;
+    height: 40px;
+}
+#cxcad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Trebuchet MS';
+}
+
+/*-------------------------------------------------------------------------------------------*/
+body#erro{
+    background-color: #CCF8EF;
+}
+header#erro{
+    background-color: #265E53;
+    height: 40px;
+}
+main#erro{
+    height: 590px;
+    min-height: 300px;
+}
+.cxerro{
+    height: 300px;
+    width: 400px;
+    padding: 50px;
+    text-align: center;
+    background-color: #265E53;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(130, 198, 184, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: 8px double #CCF8EF;
+}
+.cxerro h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #CCF8EF;
+}
+footer#erro{
+    background-color: #265E53;
+    height: 40px;
+}
+/*-------------------------------------------------------------------------------------------*/
+body.ok{
+    background-color: #CCF8EF;
+}
+header.ok{
+    background-color: #265E53;
+    height: 40px;
+}
+main.ok{
+    height: 590px;
+    min-height: 300px;
+}
+.ok{
+    height: 300px;
+    width: 400px;
+    padding: 50px;
+    text-align: center;
+    background-color: #265E53;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(130, 198, 184, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: 8px double #CCF8EF;
+}
+.ok h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #CCF8EF;
+}

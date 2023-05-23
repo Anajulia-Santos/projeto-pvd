@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Produtos</title>
+    <link rel="stylesheet" href="css/folha.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <section>
+            <h1>Código de Produto</h1>
+            <fieldset>
+                <legend>Nome do Produto</legend>
+                <input type="text" name="txtCod" id="txtCod" placeholder="Código do Produto">
+                <input type="submit" name="btProd" id="btProd" value="Buscar" onclick="buscarProduto()" >              
+            </fieldset>
+            <div class="details">
+                <h2>CAIXA</h2>
+                <figure>
+                    <img id="imgProduto" src="images/default.jpg" alt="figura padrão">
+                    <figcaption>Imagem Padrão</figcaption>
+                </figure>
+                <button onclick="addExtrato()">Incluir</button>
+                <button>Cancelar</button>
+            </div>
+        </section>
+        <section>
+            <div id="extrato">
+                <div class="result">
+                    <div class="lists">Nome do Produto</div>
+                    <div class="lists">Mini descrição</div>
+                    <div class="lists">Valor</div>
+                </div>
+            </div>
+            
+            <div class="subtotal">
+                <input type="text" id="soma" value="0">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <!--Aqui será inserido os códigos JS-->
+<!--<script>
+        let param = prompt("Opção")
+        switch(param){
+            case "cubo":
+                console.log("Você escolheu Cubo")
+                break;
+            case "bola":
+                console.log("Você escolheu Bola")
+                break;
+            case "chapéu":
+                console.log("Você escolheu Chapéu")
+                break;
+            default:
+                console.log("Não encontrado")
+        }
+    </script> -->
+    <script>
+        var nome = ""
+        var descrição = ""
+        var subtotal = 0
+
+        function buscarProduto(){
+
+            var txtCod = document.getElementById("txtCod");
+            var imgProduto = document.getElementById("imgProduto");
+
+            switch(txtCod.value){
+                case"cubo":
+                    imgProduto.src = "images/cubo.jpg";
+                    nome = "Cubo Mágico"
+                    descrição = "Jogo tridimensional composto de 6 faces de cores diferentes divididas cada uma em 9 partes de tamanhos iguais"
+                    subtotal = 30
+                    break;
+                case"computador":
+                    imgProduto.src = "images/computador.jpg";
+                    nome = "Computador"
+                    descrição = "Máquina que processa informações eletronicamente, na forma de dados e pode ser programado para as mais diversas tarefas."
+                    subtotal = 1000
+                    break;
+                case"pipoca":
+                    imgProduto.src = "images/pipoca.png";
+                    nome = "Pipoca"
+                    descrição = "Prato feito a partir de milho"
+                    subtotal = 20
+                    break;
+
+                default:
+                    imgProduto.src = "images/default.jpg";
+                    nome = "Sem Produto"
+                    descrição = "Sem descrição"
+            }
+        }
+        
+        function addExtrato(){
+            var extrato = document.getElementById("extrato")
+            var soma = document.getElementById("soma")
+
+
+            extrato.innerHTML += `
+                <div class="result">
+                        <div class="lists">${nome}</div>
+                        <div class="lists">${descrição}</div>
+                        <div class="lists">${subtotal}</div>
+                </div>
+                `;
+
+            var somaConvertida = parseFloat(soma.value);
+            soma.value = somaConvertida + subtotal;
+
+        
+        }      
+
+    </script>
+</body>
+</html>

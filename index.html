@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/folha.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body id="index">
+    <header id="index"></header>
+    <nav id="index"></nav>
+    <main id="index">
+        <div class="caixa" id="login">
+              <div>
+                <h2>Login</h2>  
+              </div>  
+              <div id="cxlogin">
+                <label for="txtusuario">Usuário  <span class="material-symbols-outlined">
+                  account_circle
+                  </span> </label>
+                <input type="text" name="txtusuario" id="txtusuario" placeholder="Usuário" />
+                <label for="passsenha">Senha <span class="material-symbols-outlined">
+                  password
+                  </span></label>
+                <input type="password" name="passsenha" id="passsenha" placeholder="Senha" />
+                <input type="submit" value="Entrar"  class="botao" onclick="verifica_user()" /> 
+              </div> 
+            <a href="#" class="esqueceu senha">Esqueceu sua senha?</a>
+            <a href="cadastro.html" class="cadastro" target="_blank">Cadastar</a>
+          </div>
+    </main>
+    <footer id="index"></footer>
+    <script>
+        function verifica_user(){
+
+        var txtusuario = document.getElementById("txtusuario");
+        var passsenha = document.getElementById("passsenha");
+        
+        var user = 'Alessandra';
+        var senha = '123456';
+
+        if (user == txtusuario.value && senha == passsenha.value) {
+          //Se der certo
+            //alert(txtusuario.value+"  EEEEEE deu certo")
+           window.location.href = "bemvindo.html";
+        }else{
+            //Se der errado
+           // alert(txtusuario.value+" nao nao")
+           window.location.href = "erro.html";
+        }
+     }
+    </script>
+</body>
+</html>
